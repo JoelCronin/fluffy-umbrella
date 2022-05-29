@@ -15,7 +15,7 @@
     <div class="jumbotron jumbotron-fluid bg-warning" style="height: 180px;">
       <div class="container">
         <h1 class="display-4 text-center"> ☀️ Weather Forecast 🌧️</h1>
-        <p class="lead text-center">Search Cities across the globe</p>
+        <p class="lead text-center">Search For Cities Forecasts Across The Globe</p>
       </div>
     </div>
   </header>
@@ -23,18 +23,24 @@
     <div class="top-container">
       <div class="search-box">
         <h2>Search your City here:</h2>
-        <input type="text" class="form-control" id="09" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="button" id="button1">Button1</button>
+        <input type="text" class="form-control" id="citySearch" aria-label="Recipient's username" aria-describedby="button-addon2" value="">
+        <button class="button" id="searchButton">Search</button>
         <button class="button" id="button1">Button2</button>
       </div>
       <div class="forecast-box">
         <div class="display-box">
-          <div class="display-city">CITY</div>
-          <div class="display-emoji">emoji</div>
-          <div class="display-temp">Temp</div>
-          <div class="display-wind">Wind</div>
-          <div class="display-UV">UV</div>
+          <div class="display-city" id="display-city">CITY</div>
+          <div id="display-temp">Temp</div>
+          <div id="display-wind">Wind</div>
+          <div id="display-UV">UV</div>
+          <div id= "display-emoji">
+            <img id="weather-icon" src="" alt="">
+          </div>
         </div>
+
+      </div>
+    </div>
+
         <div class="five-day-box">
           <div class="future" id="forecast1">
             <div class="future-emoji">emoji</div>
@@ -45,8 +51,18 @@
 
           </div>
         </div>
+                <div class="five-day-box">
+          <div class="future" id="forecast1">
+            <div class="future-emoji">emoji</div>
+            <div class="future-date">date</div>
+            <div class="future-temp">Temp</div>
+            <div class="future-wind"> Wind</div>
+            <div class="future-humidity">Humidity</div>
+
+          </div>
+        </div>
       
-      </div>
+      
     </div>
   </body>
 

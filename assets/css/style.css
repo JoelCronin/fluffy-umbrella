@@ -17,7 +17,7 @@
 .forecast-box{
     border: red 3px solid;
     display: flex;
-    height: 400px;
+    height: 600px;
     width: 70%;
     flex-direction: column;
     padding: 5px;
@@ -36,6 +36,7 @@
     display: flex;
     height: 200px;
     padding: 5px;
+    width:200px
 }
 
 .future{
@@ -46,3 +47,28 @@
     padding: 5px;
     width:18%
 }
+
+#display-city{
+    max-width: 100px;
+}
+
+#display-temp{
+max-width: 100px;
+}
+
+#display-wind{
+    max-width: 100px;
+}
+
+#display-UV{
+    max-width: 100px;
+}
+
+#display-emoji{
+    border: aquamarine 3px solid;
+    width: 350px;
+    align-self: flex-end;
+    justify-self:baseline;
+    height: 400px;
+}
+
