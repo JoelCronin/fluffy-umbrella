@@ -18,6 +18,8 @@
 .forecast-box{
     border: red 3px solid;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row ;
     height: 400px;
     width: 42%;
     flex-direction: column;
@@ -36,6 +38,8 @@
 .five-day-box{
     border: red 3px solid;
     display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     height: 200px;
     padding: 5px;
     width:100%;
