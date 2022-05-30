@@ -22,17 +22,17 @@
   <body>
     <div class="top-container">
       <div class="search-box">
-        <h2>Search your City here:</h2>
+        <h2 class="search-title">Search your City here:</h2>
         <input type="text" class="form-control" id="citySearch" aria-label="Recipient's username" aria-describedby="button-addon2" value="">
         <button class="button" id="searchButton">Search</button>
-        <ul id="city-list"></ul>
+        <p id="city-list"></p><hr>
       </div>
       <div class="forecast-box">
         <div class="display-box">
-          <h3 class="display-city" id="display-city">City</h3> <br>
-          <h4 id="display-temp">Temp</h4> <br>
-          <h4 id="display-wind">Wind</h4> <br>
-          <h4 id="display-UV">UV</h4>
+          <h3 class="display-city" id="display-city"></h3> <br>
+          <h4 id="display-temp"></h4> <br>
+          <h4 id="display-wind"></h4> <br>
+          <h4 id="display-UV"></h4>
         </div>
 
       </div>
@@ -126,7 +126,7 @@
       <label for="tags">Tags: </label>
       <input id="tags">
     </div> -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

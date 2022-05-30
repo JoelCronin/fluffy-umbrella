@@ -1,13 +1,13 @@
 .top-container{
-    border: black 3px solid;
+    /* border: black 3px solid; */
     display: flex;
-    height: 450px;
+    /* height: 450px; */
     padding: 5px;
     background-color: rgb(215, 240, 240);
 }
 
 .search-box{
-    border: black 3px solid;
+    /* border: black 3px solid; */
     display: flex;
     flex-direction: column;
     height: 400px;
@@ -16,7 +16,7 @@
 }
 
 .forecast-box{
-    border: red 3px solid;
+    /* border: red 3px solid; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row ;
@@ -27,7 +27,7 @@
 }
 
 .display-box{
-    border: black 3px solid;
+    /* border: black 3px solid; */
     display: flex;
     flex-direction: column;
     height: 400px;
@@ -36,7 +36,7 @@
 }
 
 .five-day-box{
-    border: red 3px solid;
+    /* border: red 3px solid; */
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -48,7 +48,7 @@
 }
 
 .future{
-    border: green 3px solid;
+    /* border: green 3px solid; */
     display: flex;
     flex-direction: column;
     height: 180px;
@@ -73,7 +73,7 @@ max-width: 100px;
 }
 
 #display-emoji{
-    border: aquamarine 3px solid;
+    /* border: aquamarine 3px solid; */
     width: 26%;
     height: 400px;
     display: flex;
@@ -84,6 +84,7 @@ max-width: 100px;
 #weather-icon{
     height: 325px;
     width: 325px;
+    display: none;
 }
 
 .low{
@@ -99,4 +100,15 @@ max-width: 100px;
 .severe{
     background-color: red;
     color: white;
+}
+
+.search-title{
+    font-size: large;
+}
+
+.secondSearch{
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.564);
+    margin-top: 5%;
+    
 }
