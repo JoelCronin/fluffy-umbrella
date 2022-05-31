@@ -1,13 +1,24 @@
+
+body{
+    max-width: 1400px;
+}
 .top-container{
-    /* border: black 3px solid; */
     display: flex;
-    /* height: 450px; */
     padding: 5px;
     background-color: rgb(215, 240, 240);
 }
 
+#bottom-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5px;
+   font-size: x-large;
+   font-weight: 700;
+   background-color: chartreuse;
+}
+
 .search-box{
-    /* border: black 3px solid; */
     display: flex;
     flex-direction: column;
     height: 400px;
@@ -16,18 +27,16 @@
 }
 
 .forecast-box{
-    /* border: red 3px solid; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row ;
     height: 400px;
-    width: 42%;
     flex-direction: column;
     padding: 5px;
+    text-align: center;
 }
 
 .display-box{
-    /* border: black 3px solid; */
     display: flex;
     flex-direction: column;
     height: 400px;
@@ -36,19 +45,19 @@
 }
 
 .five-day-box{
-    /* border: red 3px solid; */
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
     height: 200px;
     padding: 5px;
-    width:100%;
+    width:80%;
     max-height: 220px;
+    margin: 5px;
 
 }
 
+
 .future{
-    /* border: green 3px solid; */
     display: flex;
     flex-direction: column;
     height: 180px;
@@ -73,7 +82,6 @@ max-width: 100px;
 }
 
 #display-emoji{
-    /* border: aquamarine 3px solid; */
     width: 26%;
     height: 400px;
     display: flex;
@@ -110,5 +118,12 @@ max-width: 100px;
     width: 100%;
     background-color: rgba(255, 0, 0, 0.564);
     margin-top: 5%;
-    
+}
+
+#one,
+#zero,
+#two,
+#three,
+#four {
+ margin: 15px;
 }
