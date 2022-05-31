@@ -34,7 +34,7 @@ searchButton.addEventListener('click', function(event){
             weatherIcon.style.display = "block";
             var dateString = moment.unix(data.dt).format("MM/DD/YYYY")
             displayCity.textContent = data.name + " " + dateString
-            weatherIcon.src = "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png"
+            weatherIcon.src = "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png"
             displayTemp.textContent = "Temperature: " + Math.round((data.main.temp - 273)) + "c"
             displayWind.textContent = "Wind: " + data.wind.speed + "m/s";
             var cityButton = document.createElement('button')
@@ -77,7 +77,7 @@ function getFiveDayForecast(){
         for (var i = 0; i < 5; i++){
             var dateString2 = moment.unix(data2.daily[i].dt).format("MM/DD/YYYY")
             document.getElementById(`date${i}`).textContent = dateString2;
-            document.getElementById(`img${i}`).src = "http://openweathermap.org/img/wn/" + data2.daily[i].weather[0].icon + "@2x.png"
+            document.getElementById(`img${i}`).src = "https://openweathermap.org/img/wn/" + data2.daily[i].weather[0].icon + "@2x.png"
             document.getElementById(`temp${i}`).textContent = "Temp: " + data2.daily[i].temp.day + "c";
             document.getElementById(`wind${i}`).textContent = "Wind: " + data2.daily[i].wind_speed + " m/s";
             document.getElementById(`humidity${i}`).textContent = "Humidity: " + data2.daily[i].humidity + "%"
@@ -105,7 +105,7 @@ function nextSearch(event){
         console.log(data);
         var dateString3 = moment.unix(data.dt).format("MM/DD/YYYY")
         displayCity.textContent = data.name + " " + dateString3
-        weatherIcon.src = "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png"
+        weatherIcon.src = "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png"
         displayTemp.textContent = "Temperature: " + Math.round((data.main.temp - 273)) + "c"
         displayWind.textContent = "Wind: " + data.wind.speed + "m/s";
         localStorage.setItem("data", JSON.stringify(data));
@@ -141,7 +141,7 @@ function nextSearch(event){
             for (var i = 0; i < 5; i++){
                 var dateString2 = moment.unix(data2.daily[i].dt).format("MM/DD/YYYY")
                 document.getElementById(`date${i}`).textContent = dateString2;
-                document.getElementById(`img${i}`).src = "http://openweathermap.org/img/wn/" + data2.daily[i].weather[0].icon + "@2x.png"
+                document.getElementById(`img${i}`).src = "https://openweathermap.org/img/wn/" + data2.daily[i].weather[0].icon + "@2x.png"
                 document.getElementById(`temp${i}`).textContent = "Temp: " + data2.daily[i].temp.day + "c";
                 document.getElementById(`wind${i}`).textContent = "Wind: " + data2.daily[i].wind_speed + " m/s";
                 document.getElementById(`humidity${i}`).textContent = "Humidity: " + data2.daily[i].humidity + "%"
